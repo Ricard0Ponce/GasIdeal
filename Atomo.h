@@ -17,7 +17,7 @@ public:
     //std::vector<double> v; // Velocidades
     virtual ~Atomo();
 
-    vector <double>p,v;
+    vector <double>p,v,a;
 
     protected:
 

@@ -1,10 +1,10 @@
-# 0 "/home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.cpp"
-# 1 "/home/rich/Escritorio/NotasFC/Ejercicio2/cmake-build-debug//"
+# 0 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.cpp"
+# 1 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/cmake-build-debug//"
 # 0 "<interno>"
 # 0 "<línea-de-órdenes>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<línea-de-órdenes>" 2
-# 1 "/home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.cpp"
+# 1 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.cpp"
 
 
 
@@ -901,8 +901,8 @@ extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
 # 973 "/usr/include/stdio.h" 3 4
 }
-# 5 "/home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.cpp" 2
-# 1 "/home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.h" 1
+# 5 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.cpp" 2
+# 1 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.h" 1
 
 
 
@@ -27246,7 +27246,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     }
 
 }
-# 8 "/home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.h" 2
+# 8 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.h" 2
 # 1 "/usr/include/c++/14.2.0/iostream" 1 3
 # 36 "/usr/include/c++/14.2.0/iostream" 3
        
@@ -48181,10 +48181,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 9 "/home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.h" 2
+# 9 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.h" 2
 
 
-# 10 "/home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.h"
+# 10 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.h"
 using namespace std;
 
 class Atomo {
@@ -48195,7 +48195,7 @@ public:
 
     virtual ~Atomo();
 
-    vector <double>p,v;
+    vector <double>p,v,a;
 
     protected:
 
@@ -48203,7 +48203,7 @@ public:
 
 
 };
-# 6 "/home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.cpp" 2
+# 6 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.cpp" 2
 Atomo::Atomo()
 {
 

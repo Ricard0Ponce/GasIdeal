@@ -5,7 +5,7 @@ using namespace std;
 
 
 int main() {
-    std::cout << "GI1" << std::endl;
+    std::cout << "VVA" << std::endl;
     Sim *sim; // Usamos un apuntador
     sim = new Sim;
     sim -> prin();

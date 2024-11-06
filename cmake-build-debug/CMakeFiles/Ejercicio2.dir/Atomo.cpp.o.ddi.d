@@ -1,5 +1,5 @@
 CMakeFiles/Ejercicio2.dir/Atomo.cpp.o.ddi: \
- /home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.cpp \
+ /home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.cpp \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -24,7 +24,7 @@ CMakeFiles/Ejercicio2.dir/Atomo.cpp.o.ddi: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.h \
+ /home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.h \
  /usr/include/c++/14.2.0/vector \
  /usr/include/c++/14.2.0/bits/requires_hosted.h \
  /usr/include/c++/14.2.0/x86_64-unknown-linux-gnu/bits/c++config.h \

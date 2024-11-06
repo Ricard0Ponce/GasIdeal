@@ -1,5 +1,5 @@
 CMakeFiles/Ejercicio2.dir/main.cpp.o.ddi: \
- /home/rich/Escritorio/NotasFC/Ejercicio2/main.cpp \
+ /home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/14.2.0/iostream \
  /usr/include/c++/14.2.0/bits/requires_hosted.h \
  /usr/include/c++/14.2.0/x86_64-unknown-linux-gnu/bits/c++config.h \
@@ -168,10 +168,10 @@ CMakeFiles/Ejercicio2.dir/main.cpp.o.ddi: \
  /usr/include/c++/14.2.0/bits/basic_ios.tcc \
  /usr/include/c++/14.2.0/bits/ostream.tcc /usr/include/c++/14.2.0/istream \
  /usr/include/c++/14.2.0/bits/istream.tcc \
- /home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.h \
+ /home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.h \
  /usr/include/c++/14.2.0/vector \
  /usr/include/c++/14.2.0/bits/stl_uninitialized.h \
  /usr/include/c++/14.2.0/bits/stl_vector.h \
  /usr/include/c++/14.2.0/bits/stl_bvector.h \
  /usr/include/c++/14.2.0/bits/vector.tcc \
- /home/rich/Escritorio/NotasFC/Ejercicio2/Sim.h
+ /home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Sim.h

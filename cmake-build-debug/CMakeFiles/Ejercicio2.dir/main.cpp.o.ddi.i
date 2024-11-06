@@ -1,10 +1,10 @@
-# 0 "/home/rich/Escritorio/NotasFC/Ejercicio2/main.cpp"
-# 1 "/home/rich/Escritorio/NotasFC/Ejercicio2/cmake-build-debug//"
+# 0 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/main.cpp"
+# 1 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/cmake-build-debug//"
 # 0 "<interno>"
 # 0 "<línea-de-órdenes>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<línea-de-órdenes>" 2
-# 1 "/home/rich/Escritorio/NotasFC/Ejercicio2/main.cpp"
+# 1 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/main.cpp"
 using namespace std;
 # 1 "/usr/include/c++/14.2.0/iostream" 1 3
 # 36 "/usr/include/c++/14.2.0/iostream" 3
@@ -43294,8 +43294,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 3 "/home/rich/Escritorio/NotasFC/Ejercicio2/main.cpp" 2
-# 1 "/home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.h" 1
+# 3 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/main.cpp" 2
+# 1 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.h" 1
 
 
 
@@ -48210,11 +48210,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
     }
 
 }
-# 8 "/home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.h" 2
+# 8 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.h" 2
 
 
 
-# 10 "/home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.h"
+# 10 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.h"
 using namespace std;
 
 class Atomo {
@@ -48225,7 +48225,7 @@ public:
 
     virtual ~Atomo();
 
-    vector <double>p,v;
+    vector <double>p,v,a;
 
     protected:
 
@@ -48233,9 +48233,9 @@ public:
 
 
 };
-# 4 "/home/rich/Escritorio/NotasFC/Ejercicio2/main.cpp" 2
-# 1 "/home/rich/Escritorio/NotasFC/Ejercicio2/Sim.h" 1
-# 10 "/home/rich/Escritorio/NotasFC/Ejercicio2/Sim.h"
+# 4 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/main.cpp" 2
+# 1 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Sim.h" 1
+# 10 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Sim.h"
 using namespace std;
 
 
@@ -48248,7 +48248,7 @@ class Sim {
 
     int na, nd, nc, ncp, nci;
     double dt, L, d, r, v0;
-
+    double dis[3], f;
     vector <Atomo*> atomos;
 
     int prin();
@@ -48259,17 +48259,20 @@ class Sim {
     void EscribirPosVel();
 
     void Simulacion();
+    void Aceleraciones();
+    double LJ(double r);
+    double Dist (int i, int j);
 
     protected:
 
     private:
-# 60 "/home/rich/Escritorio/NotasFC/Ejercicio2/Sim.h"
+# 63 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Sim.h"
 };
-# 5 "/home/rich/Escritorio/NotasFC/Ejercicio2/main.cpp" 2
+# 5 "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/main.cpp" 2
 
 
 int main() {
-    std::cout << "GI1" << std::endl;
+    std::cout << "VVA" << std::endl;
     Sim *sim;
     sim = new Sim;
     sim -> prin();

@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/rich/Escritorio/NotasFC/Ejercicio2/cmake-build-debug",
-		"source" : "/home/rich/Escritorio/NotasFC/Ejercicio2"
+		"build" : "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/cmake-build-debug",
+		"source" : "/home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2"
 	},
 	"version" : 
 	{

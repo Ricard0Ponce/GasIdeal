@@ -3,7 +3,7 @@
 //
 
 #include "Sim.h"
-
+#include "math.h"
 #include "Atomo.h"
 
 Sim::Sim()
@@ -26,8 +26,9 @@ int Sim::prin()
     EscribirDatos();
     IniciarAtomos();
     //EscribirDatos();
-    EscribirPosVel();
+    //EscribirPosVel();
     Simulacion();
+    Aceleraciones();
 
     return 0;
 }
@@ -36,9 +37,9 @@ void Sim::Datos()
 {
     cout << endl;
   cout << "Sim::Datos" << endl;
-    na = 10; // Numero de atomos
+    na = 125; // Numero de atomos
     nd = 3; // Numero de dimensiones
-    nc = 15; // Numero de configuraciones
+    nc = 100; // Numero de configuraciones
 
     dt = 0.1; // Delta de tiempo
     L = 1.0; // Espacio
@@ -158,6 +159,77 @@ void Sim ::Simulacion() {
         }
     }
     //Ciclo de las configuraciones
+}
+
+void Sim::Aceleraciones() {
+    cout << endl;
+    cout << "Sim::Aceleraciones " << endl;
+
+    for (int ia = 0; ia < na; ia++) {
+        for (int id = 0; id < nd; id++) {
+            atomos[ia] -> a[id] = 0.0;
+        }
+    }
+
+    double u=0;
+
+    for (int ia = 0; ia < na - 1; ia++) {
+        for (int ja = ia+1; ja < na; ja++) {
+            double r = Dist(ia,ja); // Se calculo la distancia
+            u = u + LJ(r);
+
+        for(int id = 0; id < nd; id++) {
+            atomos[ia] -> a[id] =
+                atomos[ia] -> a[id] + f * dis[id] / r ; // Cuidado aquí con la f
+            atomos[ja] -> a[id] =
+                atomos[ja] -> a[id]- f * dis[id] / r ;
+        }
+        }
+    }
+}
+
+double Sim::LJ(double r) {
+    cout << endl;
+    cout << "Sim::LJ " << endl;
+   // double ri = 1.0 / r;
+    //double r3 = ri * ri * ri;
+    //double r6 = r3*r3;
+
+    double u = 4.0 *
+        (pow((1.0/r),12 ) -
+            pow((1.0 / r),6));
+
+    double f = u = 4.0 *
+        (2.0 * pow((1.0/r),12 )-
+            pow((1.0 / r),6))/r;
+
+
+    return (u);
+
+}
+
+double Sim:: Dist (int i, int j) {
+    cout << endl;
+    cout << "Sim::Dist " << endl;
+    double r;
+
+    for(int id = 0; id < nd; id++) {
+        dis[id] = atomos[i] -> p[id] -
+            atomos[j] -> p[id];
+        // Condiciones periodicas
+        if(fabs(dis [id]) > L / 2) {
+            dis[id] = dis[id] -
+                fabs(dis[id]) * L;
+        }
+
+       r = r + dis[id] * dis[id];
+    }
+    r = sqrt(r);
+
+    return (r);
+
+
+
 }
 
 

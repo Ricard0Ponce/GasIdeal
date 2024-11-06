@@ -1,7 +1,7 @@
 CMakeFiles/Ejercicio2.dir/Sim.cpp.o.ddi: \
- /home/rich/Escritorio/NotasFC/Ejercicio2/Sim.cpp \
+ /home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Sim.cpp \
  /usr/include/stdc-predef.h \
- /home/rich/Escritorio/NotasFC/Ejercicio2/Sim.h \
+ /home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Sim.h \
  /usr/include/c++/14.2.0/vector \
  /usr/include/c++/14.2.0/bits/requires_hosted.h \
  /usr/include/c++/14.2.0/x86_64-unknown-linux-gnu/bits/c++config.h \
@@ -66,7 +66,7 @@ CMakeFiles/Ejercicio2.dir/Sim.cpp.o.ddi: \
  /usr/include/c++/14.2.0/bits/ranges_base.h \
  /usr/include/c++/14.2.0/bits/max_size_type.h \
  /usr/include/c++/14.2.0/numbers \
- /home/rich/Escritorio/NotasFC/Ejercicio2/Atomo.h \
+ /home/rich/Escritorio/NotasFC/VelocityVerlet/Ejercicio2/Atomo.h \
  /usr/include/c++/14.2.0/iostream /usr/include/c++/14.2.0/ostream \
  /usr/include/c++/14.2.0/ios /usr/include/c++/14.2.0/iosfwd \
  /usr/include/c++/14.2.0/bits/stringfwd.h \
@@ -177,4 +177,27 @@ CMakeFiles/Ejercicio2.dir/Sim.cpp.o.ddi: \
  /usr/include/c++/14.2.0/bits/locale_facets.tcc \
  /usr/include/c++/14.2.0/bits/basic_ios.tcc \
  /usr/include/c++/14.2.0/bits/ostream.tcc /usr/include/c++/14.2.0/istream \
- /usr/include/c++/14.2.0/bits/istream.tcc
+ /usr/include/c++/14.2.0/bits/istream.tcc /usr/include/c++/14.2.0/math.h \
+ /usr/include/c++/14.2.0/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/14.2.0/bits/specfun.h /usr/include/c++/14.2.0/limits \
+ /usr/include/c++/14.2.0/tr1/gamma.tcc \
+ /usr/include/c++/14.2.0/tr1/special_function_util.h \
+ /usr/include/c++/14.2.0/tr1/bessel_function.tcc \
+ /usr/include/c++/14.2.0/tr1/beta_function.tcc \
+ /usr/include/c++/14.2.0/tr1/ell_integral.tcc \
+ /usr/include/c++/14.2.0/tr1/exp_integral.tcc \
+ /usr/include/c++/14.2.0/tr1/hypergeometric.tcc \
+ /usr/include/c++/14.2.0/tr1/legendre_function.tcc \
+ /usr/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/14.2.0/tr1/poly_hermite.tcc \
+ /usr/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+ /usr/include/c++/14.2.0/tr1/riemann_zeta.tcc

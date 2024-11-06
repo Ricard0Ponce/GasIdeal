@@ -19,7 +19,7 @@ class Sim {
     // Variables globales
     int na, nd, nc, ncp, nci;
     double dt, L, d, r, v0;
-
+    double dis[3], f;
     vector <Atomo*> atomos;
 
     int prin();
@@ -30,6 +30,9 @@ class Sim {
     void EscribirPosVel();
 
     void Simulacion();
+    void Aceleraciones();
+    double LJ(double r);
+    double Dist (int i, int j);
 
     protected:
 
